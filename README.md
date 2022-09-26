@@ -14,7 +14,7 @@ make run
 nvim src/test.tsx
 ```
 
-If the parsers get installed when `src/test.tsx`, wait for all of them to be installed, and open the file again to ensure that they're running.
+If the parsers get installed when `src/test.tsx` is opened, wait for all of them to be installed, and open the file again to ensure that they're running.
 
 Now delete "loading" from `<ThisComponentCannotBeEdited subtext="loading" />` and try to add it back.
 
