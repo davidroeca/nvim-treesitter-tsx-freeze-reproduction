@@ -19,31 +19,8 @@ const LoadedFailingCase = ({
   result1Data,
   result2Data,
 }: LoadedFailingCaseProps) => {
-  const create = async (v: any) => {
-    return
-  }
-  const update = async (v: any) => {
-    return
-  }
-  const submitData = async () => {
-    await Promise.all([
-      create({
-        a: {
-          b: true,
-        },
-      }),
-      update({
-        b: {
-          c: true,
-        },
-      }),
-    ])
-  }
   return (
     <>
-      <div className="one" onClick={() => submitData()}>
-        Hey
-      </div>
       <ul>
         {result1Data.map((item) => (
           <li key={item}>{item}</li>
