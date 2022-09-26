@@ -10,7 +10,7 @@ WORKDIR /root
 RUN git clone https://github.com/neovim/neovim
 WORKDIR /root/neovim
 # Nightly 9/25/2022
-RUN git checkout 63be7651829f8b77c4974d08ebe09f7775e41a8a
+RUN git checkout 9a5ac065093b58cceb676700b988584931cef150
 RUN make CMAKE_BUILD_TYPE=RelWithDebInfo
 RUN make install
 RUN pip install \
