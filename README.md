@@ -22,11 +22,15 @@ Neovim will freeze.
 
 You can stop the container by running `docker ps`, finding the container name, and then running `docker container stop <name-of-container>`.
 
+## Simpler
+
+After further investigation, a simpler reproduction can be found at `src/simplified.tsx`.
+
+Similar modifications to `className="this will crash"` lead to the same behavior.
+
 ## Context
 
 This is a reproduction done by pruning down a real-world example that caused a crash.
-
-Some important pieces of code involved with the crash: the async blocks within the Loaded component, as well as the inline `onChange` of `MyInput`. In particular, that inline function needed two parameters, rather than just one to cause the crash.
 
 ## Cleanup
 
