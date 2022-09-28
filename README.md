@@ -1,6 +1,6 @@
 # nvim-treesitter TSX syntax bug
 
-This repository reproduces an issue with syntax highlighting in nvim-treesitter that causes neovim to crash.
+This repository reproduces an issue with syntax highlighting in nvim-treesitter that causes neovim to freeze.
 
 ## Reproduction
 
@@ -26,11 +26,11 @@ You can stop the container by running `docker ps`, finding the container name, a
 
 After further investigation, a simpler reproduction can be found at `src/simplified.tsx`.
 
-Similar modifications to `className="this will crash"` lead to the same behavior.
+Similar modifications to `className="this will freeze"` lead to the same behavior.
 
 ## Context
 
-This is a reproduction done by pruning down a real-world example that caused a crash.
+This is a reproduction done by pruning down a real-world example that caused a freeze.
 
 ## Cleanup
 

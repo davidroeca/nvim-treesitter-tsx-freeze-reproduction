@@ -18,7 +18,7 @@ const FailingCase = () => {
   ) : result1.loading || result2.loading ? (
     <div className="so is this" />
   ) : !result1.data || !result2.data ? (
-    <div className="this will crash">No Data</div>
+    <div className="this will freeze">No Data</div>
   ) : (
     <div>
       <input
